@@ -18,10 +18,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        P2PManager.getInstance().init(this);
-        P2PManager.getInstance().setAllow3G(true);
-        P2PManager.getInstance().isConnect();
         //SDK 的初始化需要时间
         new Thread(){
 
