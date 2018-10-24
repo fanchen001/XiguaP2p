@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xigua.test">
+
+    <application>
+        <activity android:name="com.xigua.test.MainActivity" android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/ic_launcher_web"
+            android:label="测试"
+            android:supportsRtl="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
