@@ -61,6 +61,26 @@ public class P2PManager {
         }
         return instance;
     }
+    
+     /**
+     *
+     * @param uri
+     * @return
+     */
+    public static boolean isXiguaUrl(Uri uri){
+        String scheme = uri.getScheme();
+        return scheme != null && (scheme.equalsIgnoreCase("xg") || scheme.equalsIgnoreCase("xgadd") || scheme.equalsIgnoreCase("xgplay"));
+    }
+
+    /**
+     *
+     * @param url
+     * @return
+     */
+    public static boolean isXiguaUrl(String url){
+        if(TextUtils.isEmpty(url))return false;
+        return isXiguaUrl(Uri.parse(url));
+    }
 
     /**
      * 解绑服务
